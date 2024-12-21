@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+     <head>
+          <title>Список подарков</title>
+     </head>
+     <body>
+          <h1>Список подарков</h1>
+          <table border="1">
+                <tr>
+                    <th>Имя</th>
+                    <th>Подарок</th>
+                    <th>Стоимость</th>
+                    <th>Статус</th>
+                </tr>
+                {% for gift in gifts %}
+                <tr>
+                    <td>{{ gift[0] }}</td>
+                    <td>{{ gift[1] }}</td>
+                    <td>{{ gift[2] }}</td>
+                    <td>{{ gift[3] }}</td>
+                </tr>
+                {% endfor %}
+            </table>
+     </body>
+</html>
